@@ -9,3 +9,93 @@
     font-weight: 700;
     font-style: normal;
 }
+body{
+    font-family: "Skranji",serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+h1{
+    font-size: xx-large;
+}
+.img{
+    display: flex;
+    width: 40%;
+    height: 95%;
+    margin: 1% 1% 1% 1%;
+    background: url(./images/pascal-debrunner-Xk317d8TtEo-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.img-description{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 75%;
+    color: rgb(112, 101, 101);
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+.form{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+}
+.form > *{
+    padding-right:10%;
+    padding-left: 10%;
+
+}
+.form-label{
+    font-weight: 800;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4rem);
+}
+.form-input{
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all;
+    margin-top: 5%;
+    padding-right: 10%;
+}
+.form-input:focus{
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+.form-input:placeholder-shown + .form-label{
+    opacity: 0;
+    visibility: hidden;
+}
+form{
+    padding-top: 3%;
+    width: 80%;
+    margin-left: 0%;
+    background-color: rgb(183, 180, 180);   
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+.inputs> :last-child{
+    padding-left: 10%;
+    
+}
